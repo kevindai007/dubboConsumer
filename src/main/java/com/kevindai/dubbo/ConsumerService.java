@@ -1,7 +1,7 @@
 package com.kevindai.dubbo;
 
-import com.alibaba.dubbo.config.annotation.Reference;
 import com.kevindai.service.MsgService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class ConsumerService {
-    @Reference(version = "1.0.0")
+    @Autowired
     private MsgService msgService;
 
     public void showMsg(String string){
