@@ -9,11 +9,11 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class ConsumerService {
-    @Autowired
+   @Autowired
     private MsgService msgService;
 
     public void showMsg(String string){
         String s = msgService.sendMsg(string);
-        System.out.println(s);
+        System.out.println(string);
     }
 }
