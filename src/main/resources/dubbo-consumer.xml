@@ -17,4 +17,5 @@
     <dubbo:registry address="zookeeper://192.168.17.107:2181" check="false"></dubbo:registry>
     <!-- 要引用的服务 -->
     <dubbo:reference interface="com.kevindai.service.MsgService" id="msgService"></dubbo:reference>
+
 </beans>
